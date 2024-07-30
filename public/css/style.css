@@ -1,0 +1,148 @@
+*{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+.registercon{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:  linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(background.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .container{
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .container .form{
+    width: 100%;
+    padding: 30px;
+    transition: margin-left 0.18s ease;
+  }
+  
+  .container .form .title{
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+  }
+  
+  .container .forms {
+     display: flex;
+     align-items: center;
+     height: 380px;
+     width: 100%;
+     transition: height 0.2s ease;
+  }
+
+  
+  .form .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #65003A;
+    border-radius: 25px;
+  }
+  
+  .form .input-field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 32px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.5s ease;
+  }
+  
+  .input-field input:is(:focus, :valid){
+    border-bottom-color: #65003A;
+  }
+  
+  .input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    transition: all 0.5s ease;
+  }
+  
+  .input-field input:is(:focus, :valid) ~ i{
+    color: #65003A;
+  }
+  
+  .input-field i.icon{
+    left: 0;
+  }
+  
+  .form .text{
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .form a.text{
+    color: #65003A;
+    text-decoration: none;
+  }
+  
+  .form a:hover{
+    text-decoration: underline;
+  }
+  
+  .form .button input{
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #65003A;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button input:hover{
+    background-color: #3C0024;
+  }
+  
+
+  #responseMessage {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    color: green;
+    font-weight: bold;
+}
+
